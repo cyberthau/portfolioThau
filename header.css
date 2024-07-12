@@ -1,0 +1,64 @@
+/* ESTILOS DA SESSÃO HEADER E MENU */
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    position: sticky;
+    top: 0; 
+}
+
+.menu::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("./assets/backgroundImage.png");
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+}
+
+header {   
+    height: 60px;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font: 16px 'Montserrat' sans-serif;
+    font-weight: 600;
+}
+
+.menu__logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    
+}
+
+.menu__logo__img {
+    height: 22px;
+    opacity: 1;
+}
+
+.menu__title{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-terciaria);
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 600;
+    padding:  0  50px 0 50px;
+    gap: 20px;
+    
+}
+
+
+
+

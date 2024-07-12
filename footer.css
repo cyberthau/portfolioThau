@@ -1,0 +1,30 @@
+footer {   
+    height: 60px;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;   
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    position: sticky;
+    top: 0; 
+    background-color: var(--cor-de-fundo);
+}
+
+
+.footer__rodape { 
+    text-decoration: none;
+    text-align: center;  
+}
+
+
+

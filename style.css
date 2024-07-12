@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('header.css');
+@import url('main.css');
+@import url('footer.css');
+
+:root{
+    
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #5725A9 ;
+   --cor-primaria: #f57600;
+   --cor-secundaria: #eb4c28;
+   --cor-terciaria: #5725a7;
+   --cor-quartenaria: #010E81;
+   --button-background: #eb4c2899;
+   --button-ative: #f5760099;
+   --button-visited: #5725a799;
+   --black-color: #0F0F0F;
+   --white-color: #FEFEFE;
+   --lightgray-color: #919499;
+   --darkgray-color:#404040;
+   --cor-destaque: linear-gradient(#f77800, #eb4c28, #5725a7, #010e7e);
+   --cor-de-fundo: linear-gradient(to bottom right, #010e7e, #5725a7, #eb4c28, #f57600);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black-color);
+    padding: 0;
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+a:link {
+    color: var(--cor-de-link);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: var(--cor-primaria);
+}
+
+a:visited a:active {
+    color: var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:  0 100px 0 100px;
+    gap: 20px;
+}
+
+img {
+    width: 50%;
+}
+
+button {
+    background-color: #eb4c2899;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 16px;
+    border-color: #eb4c2899;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-de-link);
+
+}
+
+button:hover {
+    background-color: #f5760099;
+    border-color: #f5760099;
+}
+
+button:visited {
+    background-color: #5725a799;
+    border-color: #5725a799;
+    color: var(--cor-secundaria);
+}
+
+/*Sessão Menu*/
+
+section.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height:100%;
+    box-sizing: content-box;
+}
+
+/*Sessão Title*/
+
+section.title{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+    box-shadow: 0 4px 8px 0 var(--lightgray-color), 0 6px 22px 0 var(--lightgray-color);
+    border-radius: 20px;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    }
+
+
+/*Sessão About*/
+
+section.about{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+    width: 100%;
+    height:100%;
+    font-size: 16px;
+    gap: 40px;
+    border-bottom: var(--lightgray-color);
+    background-image: url("./assets/backgroundImage.png");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 var(--lightgray-color), 0 6px 22px 0 var(--lightgray-color);
+    border-radius: 20px;
+
+}
+
+/*Sessão Skills*/
+
+section.skills__hobbies {
+    display: block;
+    box-sizing: content-box;
+    width: 100%;
+    height:100%;
+    font-size: 16px;
+    align-content: space-around;
+    justify-content: space-between;
+    gap: 40px;
+    box-shadow: 0 4px 8px 0 var(--lightgray-color), 0 6px 22px 0 var(--lightgray-color);
+    border-radius: 20px;
+}
+
+
+/* Formação Acadêmica*/
+
+section.academic{
+    display: block;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    width: 100%;
+    height:100%;
+    align-content: space-around;
+    justify-content: space-between;
+    font-size: 16px;
+    gap: 40px;
+    background-image: url("./assets/backgroundImage.png");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 var(--lightgray-color), 0 6px 22px 0 var(--lightgray-color);
+    border-radius: 20px;
+
+}
+
+/* Experiência*/
+
+section.experience{
+    display: block;
+    box-sizing: content-box;
+    width: 100%;
+    height:100%;
+    align-content: space-around;
+    justify-content: space-between;
+    font-size: 16px;
+    gap: 40px;
+    box-shadow: 0 4px 8px 0 var(--lightgray-color), 0 6px 22px 0 var(--lightgray-color);
+    border-radius: 20px;
+
+}
+
+/*Contato*/
+
+section.formcontato{
+    display: block;
+    box-sizing: content-box;
+    width: 100%;
+    height:100%;
+    font-size: 16px;
+    align-content: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-image: url("./assets/backgroundImage.png");
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 var(--lightgray-color), 0 6px 22px 0 var(--lightgray-color);
+    border-radius: 20px;
+
+}
+
+/*footeer*/
+
+section.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height:100%;
+    box-sizing: content-box;     
+}
+
+
+
+/* Telas grandes */
+
+@media screen and (min-width: 1024px) {
+   
+    .menu__list__item__contato {
+        display: none;
+    }
+    
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width: 768px)  {
+
+    .menu__list__item__contato {
+        display: none;
+    }
+  
+}
+
+
+/*Mobile*/
+
+@media (max-width: 767px) {
+
+    .menu__list, .menu__title {
+        display: none;
+    }
+
+    .all {
+        width: 100%;
+    } 
+    
+    button {
+    width: 100px;
+    font-size: 12px;
+    }
+ 
+   /* HEADER E MENU */
+    
+   header {   
+    height: 60px;
+    padding: 10px 50px;
+   }
+   
+   main {
+    margin:  0 10px 0 10px;
+    gap: 20px;
+   }
+
+   section.menu {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 10px;
+   }
+   
+   .menu__logo {
+    font-size: 14px;
+    }
+            
+   .menu__list__item__contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 50px;
+    gap: 10px;     
+    }
+
+   section.title, section.about, section.skills__hobbies, 
+   section.academic, section.experience, section.formcontato {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;       
+   }
+
+    /* Title */
+
+    .title {
+    display: block;
+    block-size: auto;
+    }
+
+    .title__div {
+    display: flex;
+    flex-direction: column;
+    }
+    
+   .title__profile {
+    box-shadow: none;
+    align-self: center;           
+    }
+    
+    .title__profile img {
+    width: 50%;       
+   }
+
+    .title__container{
+    padding: 10px;
+   }
+    
+    .title__bio { 
+    font-size: 21px;
+    font-weight: 600;
+   }
+    
+    .title__subsection {
+    font-size: 18px;
+    font-weight: 200;
+    } 
+
+    .title__network{
+    align-items: end;
+    gap: 0px;
+    font-weight: 600;
+    }
+        
+    .title__network__item{
+    height: auto;
+    }
+        
+    .title__network__item img {
+    display: none;
+    }
+
+    /* About */
+
+    .about {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    }
+
+    .about__container {      
+    flex-direction: column;
+    padding: 10px;
+    height: 100%;
+    gap: 10px;
+    }
+
+    .about__title {
+    padding: 5px;
+    }
+
+    .about__paragraph{
+    font-size: 16px;
+    text-align: left;
+    }
+
+    /* Skills e Hobbies */
+
+    section.skills__hobbies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    }
+
+    section.skills,
+    section.hobbies,
+    section.formcontato {
+        padding: 0px;
+
+    }
+
+    .skills__line,
+    .hobbies__line {
+    flex-direction: row-reverse;
+    }
+
+    .skills__box,
+    .hobbies__box  {
+    height: 200px;
+    width: 200px;
+    }
+  
+    .skills__line,
+    .hobbies__line,
+    .academic__courses,
+    .experiencie__box,
+    .experiencie__info {
+        display: flex;
+        flex-direction: column;       
+    }
+
+    /* FORMACÃO ACADÊMICA */
+
+    section.academic{
+    gap: 10px;
+    }
+    
+    .academic__title,
+    .academic__courses {
+    padding: 5px;
+    }
+       
+  /* Experiência */
+    
+  section.experience {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   }  
+
+   .experience {
+    justify-content: left;
+    gap: 10px;
+   }
+
+   .experience__section__title{
+    padding: 0px;
+    }
+
+   .experience__title,
+   .experience__text {
+    padding: 5px;
+   }
+
+   .experience__img {
+    width: 100%;
+   }
+
+   .experiencie__box,
+   .experience__info {
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 5px;
+    gap: 10px;
+   }
+
+   .experiencie__box:nth-child(odd) {
+    flex-direction: column;
+    justify-content:space-evenly;
+   }
+    
+    /*Contato*/
+    .formcontato__contacto {
+    padding: 10px 20px 10px 20px;
+    }
+ 
+    .formcontato__botao__div{
+     justify-content: center; 
+    }
+
+    .formcontato__botao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 80px;
+    justify-content: center;
+    }
+ 
+
+}
